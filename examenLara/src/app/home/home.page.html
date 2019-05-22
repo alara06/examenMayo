@@ -1,14 +1,23 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Personajes de StarWars
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+ 
+  <ion-list >
+    
+    <ion-item *ngFor="let data of datos; let i = index">
+        <ion-label (click) = "irExtras( i )"  > {{ i }}</ion-label>
+       
+        <ion-label> {{ data.name }}</ion-label>
+          <ion-label>{{ data.gender }}</ion-label>
+            <ion-label> {{ data.eye_color }}</ion-label>
+        
+    </ion-item>
+ </ion-list>
+
 </ion-content>

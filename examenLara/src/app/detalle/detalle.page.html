@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>El detalle de tu personaje seleccionado</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-content padding>
+      <!-- img [src]="infocompleta[index].image" alt="foto" -->
+      <h3>La informacion que acba de seleccionar es</h3>
+
+
+      <h2>Nombre de tu personaje</h2>
+      <p> <b> {{datoS.name }} </b></p>
+
+   
+
+      <h2>el género es</h2>
+      <p> <b> {{datoS.gender }} </b></p>
+      <h2>Su color de cabello es</h2>
+      <p> <b> {{datoS.hair_color }} </b></p>
+
+      <h2>El color de sus ojos es</h2>
+      <p> <b> {{datoS.eye_color }} </b></p> 
+
+      
+
+<ion-button color="primary" 
+(click)="Save()">
+Guardar info
+</ion-button>
+  </ion-content>
+  
+</ion-content>
